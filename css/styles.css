@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+body {
+  margin: 0px;
+  font-family: "Mulish", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  text-decoration: none;
+  color: #1d1b2f;
+  transition: all 200ms ease-in-out;
+}
+
+.main-btn {
+  font-family: "Mulish", sans-serif;
+  font-size: 16px;
+  padding: 0 12px;
+  font-weight: 600px;
+  height: 36px;
+  background-color: #3a36e4;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.main-btn:hover {
+  opacity: 85%;
+}
+
+nav {
+  border-bottom: #ececf5 solid 1px;
+  height: 88px;
+}
+nav a {
+  padding: 16px;
+}
+nav a:hover {
+  color: #313131;
+}
+nav .nav-content-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  font-size: 16px;
+}
+nav .nav-content-container .nav-links,
+nav .nav-content-container .nav-logo,
+nav .nav-content-container .nav-auth {
+  display: flex;
+  width: 33%;
+  align-items: center;
+}
+nav .nav-content-container .nav-logo .logo {
+  background-color: #d9d9d9;
+  font-size: 24px;
+  padding: 10px 22px;
+  text-align: center;
+}
+nav .nav-content-container .nav-links {
+  justify-content: center;
+}
+nav .nav-content-container .nav-auth {
+  justify-content: flex-end;
+}
+nav .nav-content-container .nav-auth .sign-in {
+  margin-right: 10px;
+}
+nav .nav-content-container #nav-menu {
+  display: flex;
+  font-size: 32px;
+  text-align: right;
+  align-items: center;
+}
+nav #menu-links {
+  display: none;
+  margin: 20px 0;
+}
+nav #menu-links a {
+  font-size: 18px;
+  display: block;
+  text-align: right;
+  padding: 2px;
+  margin-right: 20px;
+}
+nav #menu-links a:hover {
+  color: #3a36e4;
+  font-weight: 600;
+}
+
+main {
+  max-width: 768px;
+  margin: 100px auto;
+}
+main h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 24px 8px;
+  text-transform: capitalize;
+}
+main .support-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+main .support-links a {
+  border: 1px solid #d7d8e3;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 400;
+  width: 318px;
+  height: 142px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  margin: 0px 8px 40px;
+  text-transform: capitalize;
+}
+main .support-links a:hover {
+  border: 1px solid #3a36e4;
+}
+
+.form-section #submitted p {
+  margin: 0;
+}
+.form-section #submitted a {
+  color: #3a36e4;
+}
+.form-section .back {
+  color: #3a36e4;
+  margin: 0px 8px 30px;
+  font-size: 14px;
+}
+.form-section .warning {
+  background-color: #ffd4e1;
+  border: 1px solid #c51c4f;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 8px;
+  font-size: 16px;
+}
+.form-section .warning a {
+  color: #3a36e4;
+  text-decoration: underline;
+}
+.form-section form {
+  padding: 8px;
+  margin-top: 16px;
+}
+.form-section label {
+  font-size: 16px;
+}
+.form-section input,
+.form-section select,
+.form-section textarea {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border: 1px solid #d7d8e3;
+  border-radius: 4px;
+  margin: 8px 0 20px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+.form-section #details {
+  height: 180px;
+}
+.form-section #upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.form-section #upload {
+  height: 120px;
+  border: 2px dashed #d7d8e3;
+  color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  margin-bottom: 0;
+}
+.form-section #upload-text {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 14px;
+  position: relative;
+  top: -73px;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+.form-section #upload-text span {
+  color: #3a36e4;
+}
+.form-section #refund-inputs {
+  display: none;
+}
+.form-section #refund-inputs #last-four {
+  border-radius: 4px 0 0 4px;
+}
+.form-section #refund-inputs #expiration {
+  border-radius: 0 4px 4px 0;
+  border-left: none;
+}
+.form-section #refund-inputs .card-inputs {
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: nowrap;
+}
+.form-section #file-chosen p {
+  margin: 0;
+  font-size: 12px;
+}
+.form-section .submit-btn {
+  color: white;
+  width: 75px;
+  border: none;
+  margin: 0 0 0 auto;
+}
+
+@media (min-width: 784px) {
+  nav #nav-menu {
+    visibility: hidden;
+    width: 0;
+  }
+}
+@media (max-width: 784px) {
+  nav .nav-links,
+nav .sign-in,
+nav .sign-up {
+    visibility: hidden;
+  }
+  main h1 {
+    font-size: 30px;
+    padding: 8px;
+  }
+  main .support-links a {
+    width: 100%;
+    margin: 8px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

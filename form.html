@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Description" content="BeFunky Take Home Assessment" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/606d8453fd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>BeFunky Take Home Assessment</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content-container">
+        <div class="nav-logo">
+          <div class="logo">LOGO</div>
+        </div>
+        <div class="nav-links">
+          <a href="#">Create</a><a href="#">Learn</a><a href="#">Support</a>
+        </div>
+        <div class="nav-auth">
+          <a href="#" class="sign-in">Sign In</a>
+          <button class="sign-up main-btn">Get Started</button>
+          <div id="nav-menu"><i class="fa-solid fa-bars"></i></div>
+        </div>
+      </div>
+      <div id="menu-links">
+        <a href="/">Create</a>
+        <a href="/">Learn</a>
+        <a href="/">Support</a>
+        <a href="/">Sign In</a>
+        <a href="/">Get Started</a>
+      </div>
+    </nav>
+    <main class="form-section">
+      <a href="/" class="back">Back</a>
+      <h1>Contact BeFunky Support</h1>
+      <div class="warning">
+        Looks like you’re not signed in. For the fastest response be sure to
+        <a href="#">sign in</a> to your account.
+      </div>
+      <form id="support-form">
+        <label for="email">What’s your email address?*</label>
+        <input type="text" id="email" name="email" required />
+        <label for="device">What type of device are you using?</label>
+        <select id="device" name="device">
+          <option selected value="">choice</option>
+          <option value="phone">smart phone</option>
+          <option value="tablet">tablet</option>
+          <option value="laptop">laptop/desktop</option>
+          <option value="other">other</option>
+        </select>
+        <label for="subject">Subject*</label>
+        <input type="text" id="subject" name="subject" required />
+        <label for="details"
+          >Please tell us what you’re having trouble with today*</label
+        >
+        <textarea name="details" id="details" required></textarea>
+        <!-- content only visible when form type = refund params passed through url -->
+        <div id="refund-inputs"></div>
+        <label for="upload">Would you like to include any attachments?</label>
+        <input type="file" id="upload" name="upload" multiple />
+        <p id="upload-text">
+          <span>Add files</span> or drag and drop attachements here
+        </p>
+        <div id="file-chosen"></div>
+        <input type="submit" class="submit-btn main-btn" />
+      </form>
+    </main>
+    <script src="js/main.js" defer></script>
+    <script src="js/form.js" defer></script>
+  </body>
+</html>
