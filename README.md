@@ -1,6 +1,7 @@
 # BeFunky Assessment
 
-## Run these commands
+Run the following commands: \
+\
 git clone https://github.com/gabibble/BeFunky-support-page \
 cd BeFunky-support-page \
 npm install --save sirv-cli \
